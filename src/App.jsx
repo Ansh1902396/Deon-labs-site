@@ -5,14 +5,14 @@ import Hero from "./components/Hero";
 import Mission from "./components/Mission";
 import NavBar from "./components/Navbar";
 import Team from "./components/Team";
-import Nav from "./components/Nav";
+
 
 
 function App() {
 
 
     return (
-        <div>
+        <div> 
             <NavBar />
             <Hero />
             <div className="space-y-reverse">

@@ -5,7 +5,8 @@ const companies = [
     "./router protocol.png",
     "./superteam.png", 
     "./gitopia.png",
-    "./gari.png"
+    "./gari.png",
+    "./tezoz.png"
     
 
     //-----
@@ -30,20 +31,20 @@ const Companies = () => {
     };
 
     return (
-        <div id="team" className="flex flex-col justify-center items-center w-full bg-black pb-28 space-y-20">
-            <div className="space-y-10">
-            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center font-inter text-5xl md:text-6xl lg:text-5xl font-bold pb-20px mt-[120px] tracking-[0.1em] font-medium">BUILT BY A TEAM FROM</h1>
-            <p className="text-white text-center font-poppins text-2xl font-normal leading-normal opacity-60">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.  Cumque nostrum iure <br /> cum magni animi perferendis ex iste vel fuga.
+        <div id="team" className="flex flex-col justify-center items-center w-full bg-black md:pb-28 space-y-20">
+            <div className="md:space-y-10">
+            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center font-inter  md:text-6xl lg:text-5xl  md:mt-[120px] md:tracking-[0.1em] text-2xl font-medium">BUILT BY A TEAM FROM</h1>
+            <p className="text-white text-center font-poppins md:text-2xl  font-normal leading-normal opacity-60  md:px-8">
+            We have assembled a team of web3 avengers from some of the <br /> leading web3 companies to build your dream web3 company.
                 </p>
             </div>
             
-            <div className="px-11">
-                <ul className="flex space-x-32">
+            <div className="md:px-11">
+                <ul className="flex flex-wrap md:flex-nowrap md:space-x-24 px-3 md:p-0">
                     {companies.map((company, idx) => (
                         <div
                             key={`${company}#${idx}`}
-                            className="m-5 w-28 flex">
+                            className="md:m-5 md:w-28   w-14 m-5 flex">
                             <img
                                 src={company}
                                 alt=""

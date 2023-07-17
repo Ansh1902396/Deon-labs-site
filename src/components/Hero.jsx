@@ -1,12 +1,12 @@
 const Hero = () => {
     return (
-        <main id="hero" className="flex flex-col items-center z-10 bg-black pb-44 relative">
+        <main id="hero" className="flex flex-col items-center z-10 bg-black pb-44 relative ">
             <p className="text-white bg-clip-text text-transparent text-center font-tektur text-5xl md:text-6xl lg:text-8xl font-bold pb-20px mt-[120px]">
                 Web3 Ecosystem
                 <br /> Enabler
             </p>
             <div className="flex flex-col items-center flex-shrink-0 pt-20px pb-20px">
-                <p className="text-white text-center font-poppins text-2xl font-normal leading-normal opacity-60">
+                <p className="text-white text-center font-poppins text-2xl font-normal leading-normal opacity-60 ltr:ms-[500px]  md:">
                     Deon Labs is your In-house Web3 Ecosystem builder driving
                     paradigm <br /> shift into Web3 Ecosystems.
                 </p>

@@ -1,3 +1,5 @@
+import NavBar from "./Navbar";
+
 const companies = [
     "./polygon.png",
     "./solana.png",
@@ -17,7 +19,7 @@ const partners = [
     "./ipfs.png",
     "./shardeum.png",
     "./google.png",
-    "./tezoz.png",
+    "./5ire.svg",
     
 ]
 
@@ -28,7 +30,10 @@ const organizations = [
     "./aurora.png",
     
 ]
-
+const friends = [
+    "./topl.png", 
+    "./Hashed_Emergent.jpg",
+]
 const Companies = () => {
     const onMouseIn = (e) => {
         const cursor = document.querySelector("#cursor").firstChild;
@@ -43,21 +48,21 @@ const Companies = () => {
     };
 
     return (
-        <div id="partners" className="flex flex-col justify-center items-center w-full bg-black pb-28 space-y-24">
-            <div className="space-y-10">
+        <div id="partners" className="flex flex-col justify-center items-center w-[100vw] bg-black pb-28 md:space-y-24">
+
+            <div className="md:space-y-10">
             <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center font-inter text-5xl md:text-6xl lg:text-5xl  pb-20px mt-[120px] tracking-[0.1em] font-medium ">OUR PARTNERS</h1>
-            <p className="text-white text-center font-poppins text-2xl font-normal leading-normal opacity-60">
-            Deon motivates transformative strategies that revolutionize<br /> global business, consumer, and organizational operations., 
+            <p className="text-white text-center font-poppins text-2xl font-normal leading-normal opacity-60 md:px-3  ">
+            We contributed to building a revolutionary ecosystem for some of the leading <br /> blockchains, Defi, GameFi, and Infrastructure projects. 
                 </p>
             </div>
-            
-           
-                <ul className="flex space-x-48">
+            <div className="md:space-y-10">
+            <div className="flex md:space-x-48">
                     
                     {companies.map((company, idx) => (
                         <div
                             key={`${company}#${idx}`}
-                            className="m-5 w-28 flex">
+                            className="md:m-5 w-10  md:w-28 flex">
                             <img
                                 src={company}
                                 alt=""
@@ -67,14 +72,14 @@ const Companies = () => {
                             />
                         </div>
                     ))}
-                </ul>
+                </div>
 
-                <ul className="flex space-x-48">
+                <div className="flex md:space-x-48">
                     
                     {partners.map((partner, idx) => (
                         <div
                             key={`${partner}#${idx}`}
-                            className="m-5 w-28 flex">
+                            className="md:m-5 w-10 md:w-28 flex">
                             <img
                                 src={partner}
                                 alt=""
@@ -84,14 +89,14 @@ const Companies = () => {
                             />
                         </div>
                     ))}
-                </ul>
+                </div>
 
-                <ul className="flex space-x-48">
+                <div className="flex md:space-x-48">
                     
                     {organizations.map((organization, idx) => (
                         <div
                             key={`${organization}#${idx}`}
-                            className="m-5 w-28 flex">
+                            className="md:m-5 w-10 md:w-28 flex">
                             <img
                                 src={organization}
                                 alt=""
@@ -101,7 +106,24 @@ const Companies = () => {
                             />
                         </div>
                     ))}
-                </ul>
+                </div>
+                <div className="flex md:space-x-48">
+                    
+                    {friends.map((friend, idx) => (
+                        <div
+                            key={`${friend}#${idx}`}
+                            className="md:m-5 w-14 md:w-28 flex">
+                            <img
+                                src={friend}
+                                alt=""
+                                className="object-contain"
+                                onMouseEnter={onMouseIn}
+                                onMouseLeave={onMoueOut}
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
                 
         </div>
     );

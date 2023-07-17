@@ -11,15 +11,15 @@ const Footer = () => {
 		cursor.innerText = "";
 	};
 	return (
-		<main id="social" className="bg-black  flex flex-col  justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
-			<div className="space-y-4">
-			<h1 className="text-white text-center font-poppins text-5xl md:text-6xl lg:text-6xl font-bold pb-20px mt-[120px] mb-[100px] ">
+		<main id="social" className="bg-black  flex flex-col  justify-center items-center bg-gradient-to-r from-purple-400 to-indigo-600 w-[100vw]">
+			<div className="space-y-4 items-center md:">
+			<h1 className="text-white text-center font-poppins text-5xl m md:text-6xl lg:text-6xl font-bold pb-20px mt-[120px] mb-[100px] ">
 				YOU BUILD WEB3 PRODUCT,
 				<br /> WE WILL BUILD ECOSYSTEM FOR YOU!!
 			</h1>
 			</div>
 			
-			<div className="flex  justify-between px-10 mb-[90px] bg-gradient-to-r from-cyan-500 to-blue-500 h-[100px] w-[500px] rounded-3xl items-center ">
+			<div className="flex  justify-between px-10 mb-[90px] bg-gradient-to-r from-cyan-500 to-blue-500 h-[100px] md:w-[500px] rounded-3xl items-center ">
 				<div>
 				<a href="mailto: hello@deonlabs.com">
 					<img
