@@ -6,19 +6,13 @@ import Mission from "./components/Mission";
 import NavBar from "./components/Navbar";
 import Team from "./components/Team";
 
-
-
 function App() {
-
-
     return (
-        <div> 
+        <div className="relative">
             <NavBar />
             <Hero />
-            <div className="space-y-reverse">
             <Mission />
             <Partner />
-            </div>
             <Team />
             <Footer />
 
@@ -43,3 +37,4 @@ function App() {
 }
 
 export default App;
+

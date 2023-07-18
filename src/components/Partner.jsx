@@ -5,35 +5,23 @@ const companies = [
     "./solana.png",
     "./flow.png",
     "./amazon.svg",
-    
 
     //-----
-   
-    
+
     // "Hashed Emergent",
     // "Xinfin Network",
     // "Zcash",
 ];
 
-const partners = [
-    "./ipfs.png",
-    "./shardeum.png",
-    "./google.png",
-    "./5ire.svg",
-    
-]
+const partners = ["./ipfs.png", "./shardeum.png", "./google.png", "./5ire.svg"];
 
 const organizations = [
     "./filcoin.png",
     "./binance.png",
     "./chainlink.png",
     "./aurora.png",
-    
-]
-const friends = [
-    "./topl.png", 
-    "./Hashed_Emergent.jpg",
-]
+];
+const friends = ["./topl.png", "./Hashed_Emergent.jpg"];
 const Companies = () => {
     const onMouseIn = (e) => {
         const cursor = document.querySelector("#cursor").firstChild;
@@ -48,17 +36,21 @@ const Companies = () => {
     };
 
     return (
-        <div id="partners" className="flex flex-col justify-center items-center w-[100vw] bg-black pb-28 md:space-y-24">
-
+        <div
+            id="partners"
+            className="flex flex-col justify-center items-center w-full bg-black pb-28 md:space-y-24">
             <div className="md:space-y-10">
-            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center font-inter text-5xl md:text-6xl lg:text-5xl  pb-20px mt-[120px] tracking-[0.1em] font-medium ">OUR PARTNERS</h1>
-            <p className="text-white text-center font-poppins text-2xl font-normal leading-normal opacity-60 md:px-3  ">
-            We contributed to building a revolutionary ecosystem for some of the leading <br /> blockchains, Defi, GameFi, and Infrastructure projects. 
+                <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center font-inter text-2xl md:text-6xl lg:text-5xl mt-[60px] tracking-[0.1em] font-medium ">
+                    OUR PARTNERS
+                </h1>
+                <p className="text-white text-center font-poppins md:text-2xl font-normal leading-normal opacity-60 md:px-3 mb-12">
+                    We contributed to building a revolutionary ecosystem for
+                    some of the leading <br /> blockchains, Defi, GameFi, and
+                    Infrastructure projects.
                 </p>
             </div>
-            <div className="md:space-y-10">
-            <div className="flex md:space-x-48">
-                    
+            <div className="space-y-6 md:space-y-10">
+                <div className="flex space-x-5 md:space-x-40">
                     {companies.map((company, idx) => (
                         <div
                             key={`${company}#${idx}`}
@@ -74,8 +66,7 @@ const Companies = () => {
                     ))}
                 </div>
 
-                <div className="flex md:space-x-48">
-                    
+                <div className="flex space-x-5 md:space-x-40">
                     {partners.map((partner, idx) => (
                         <div
                             key={`${partner}#${idx}`}
@@ -91,8 +82,7 @@ const Companies = () => {
                     ))}
                 </div>
 
-                <div className="flex md:space-x-48">
-                    
+                <div className="flex space-x-5 md:space-x-40">
                     {organizations.map((organization, idx) => (
                         <div
                             key={`${organization}#${idx}`}
@@ -107,8 +97,7 @@ const Companies = () => {
                         </div>
                     ))}
                 </div>
-                <div className="flex md:space-x-48">
-                    
+                <div className="flex space-x-5 md:space-x-40">
                     {friends.map((friend, idx) => (
                         <div
                             key={`${friend}#${idx}`}
@@ -124,8 +113,8 @@ const Companies = () => {
                     ))}
                 </div>
             </div>
-                
         </div>
     );
 };
 export default Companies;
+
