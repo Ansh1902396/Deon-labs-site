@@ -13,7 +13,7 @@ const companies = [
     // "Zcash",
 ];
 
-const partners = ["./ipfs.png", "./shardeum.png", "./google.png", "./5ire.svg"];
+const partners = ["./ipfs.png", "./shardeum.png", "./google.png"];
 
 const organizations = [
     "./filcoin.png",
